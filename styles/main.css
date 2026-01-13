@@ -1,0 +1,76 @@
+:root {
+  --orange-light: #ffe0b2;
+  --orange-main: #ff9800;
+  --orange-dark: #e65100;
+
+  --green: #2e7d32;
+  --red: #c62828;
+
+  --bg: #fffaf3;
+  --text: #222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--orange-main);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.result-success {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.result-fail {
+  color: var(--red);
+  font-weight: bold;
+}
+
+main {
+  padding: 1rem;
+  max-width: 720px;
+  margin: auto;
+}
+
+section {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+h2, h3 { margin-top: 0; }
+
+input {
+  width: 100%;
+  font-size: 16px; /* важно за iOS да не zoom-ва */
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+#opts button {
+  width: 100%;
+  text-align: left;
+}
+
+/* малко повече място между елементите на мобилни */
+p, label { line-height: 1.35; }
